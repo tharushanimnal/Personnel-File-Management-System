@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/pcard.css">
+    <style>
+            .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.search label {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 20%;
+}
+
+.search i.bx {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.search .right-align {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="topb">
+            <div class="search">
+                <label >
+                    <input class="form-control" type="text" id="search-keyword" placeholder="search here">
+                </label>
+                <a href="index.html" class="right-align">
+                <img class="icon" src="img/back.png" alt="image">
+            </a>
+            </div>
+        </div>
+        <div class="pcon">
+            <div class="profile-container">
+               
+            </div>
+        </div>
+        <div id="large-card" class="large-card">
+            <div class="boxs">
+                <div class="image-container">
+                    <img src="" alt="Large Profile" id="large-profile-img">
+                </div>
+                <div class="txt-container">
+                    <p class="na1">Name</p>
+                    <p class="po1">Position</p>
+                </div>
+            </div>
+            <div class="te1">
+                <p>Details  -  details</p>
+                <p>Details  -  details</p>
+                <p>Details  -  details</p>
+            </div>
+            <button id="edit-button" class="edit-button">Edit</button>
+        </div>
+    </div>
+
+ <script src="Js/pcard.js"></script>
+ <script src="Js/func.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Assests/bootstrap/css/bootstrap.min.css" />
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+<link rel="stylesheet" href="CSS/table.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-start">
+            <div class="col-lg-3 col-md-4 col-sm-6 mt-3">
+                <input type="text" class="form-control" placeholder="Search Here" id="searchInput" onkeyup="searchProduct()">
+            </div>
+            <div class="col-auto mt-3">
+                <button class="btn btn-outline-info" onclick="viewFilter();">Filters</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-none" id="filterId">
+    <div class="border border-dark rounded-4 mt-4 p-5 col-12 col-md-10 offset-md-1 position-relative">
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" aria-label="Close" onclick="closeFilter();"></button>
+        <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+                <div class="row">
+                    <label class="col-3 form-label">Increment date :</label>
+                    <div class="col-9">
+                        <input type="month" id="d1" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <div class="row">
+                    <label class="col-3 form-label">Report Date :</label>
+                    <div class="col-9">
+                        <input type="month" id="d2" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-md-6 mb-3">
+                <div class="row">
+                    <label class="col-3 form-label">Efficiency :</label>
+                    <div class="col-9">
+                        <select class="form-select" id="rank">
+                            <option value="">Select an option</option>
+                            <option value="𝐈">𝐈</option>
+                            <option value="𝐈𝐈">𝐈𝐈</option>
+                            <option value="𝐈𝐈𝐈">𝐈𝐈𝐈</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <div class="row">
+                    <label class="col-3 form-label">Retierment Date :</label>
+                    <div class="col-9">
+                        <input type="month" id="d3" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-md-2">
+                <button class="btn btn-outline-info w-100" onclick="advSearchProduct();">Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Increment Date</th>
+            <th>Report Date</th>
+            <th>Grade</th>
+            <th>Tranfer Date</th>
+            <th>Retierment Date</th>
+            <th>Efficiency</th>
+        </tr>
+    </thead>
+    <tbody id="data-table">
+        <!-- Search results will be populated here -->
+    </tbody>
+</table>
+<script src="Js/search.js"></script>
+<script src="Assests/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    function viewFilter() {
+            document.getElementById('filterId').classList.remove('d-none');
+        }
+
+        function closeFilter() {
+            document.getElementById('filterId').classList.add('d-none');
+        }
+</script>
+</body>
+</html>

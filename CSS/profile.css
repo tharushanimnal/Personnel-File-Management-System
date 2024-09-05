@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    background: white;
+    padding: 20px;
+}
+.edit-container{
+    padding: 20px;
+    display:flex ;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+   
+}
+.edit-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: 4px solid black;
+}
+.namet{
+
+ font-size: 28px;
+ font-weight: 800;
+
+}
+.con{
+    position: relative;
+    left: 100px;
+}
+
+/* content */
+.contentb{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    text-align: center;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.bd1{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    font-weight: 200;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bt1{
+    position: relative;
+    width: 80px;
+    height: 35px;
+    border-radius: 30px;
+    left: 120px;
+}
+.bt11{
+    position: relative;
+    width: 80px;
+    height: 35px;
+    border-radius: 30px;
+
+}
+
+.sub1,.sub2, .sub3{
+    position:relative;
+   left: 80px;
+   top: 20px;
+}

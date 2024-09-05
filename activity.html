@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/form.css" />
+</head>
+<body>
+    <div id="page" class="site">
+        <div class="titl">
+            <img class="imgico" src="img/test.png" alt="image">
+            <p class="txt1">ENTER</p>
+            <a href="index.html" class="right-align">
+                <img class="icon" src="img/back.png" alt="image">
+            </a>
+        </div>
+        
+        <div class="container">
+            <div class="form-box">
+                <div class="progress">
+                   <div class="logo"><a href="#"><span>Enter</span>Details</a></div>
+                   <ul class="progress-steps ">
+                    <li class="step active"> 
+                        <span>1</span>
+                        <p>මූලික තොරතුරු<br><span>25 secs to complete</span></p>
+                    </li>
+                    <li class="step"> 
+                        <span>2</span>
+                        <p> කාර්යක්ෂමතා කඩඉම තොරතුරු<br><span>60 secs to complete</span></p>
+                    </li>
+                    
+                   </ul>
+                </div>
+                <form action="php/activity.php" method="post" enctype="multipart/form-data">
+                    <div class="form-one form-step active">
+                        <div class="bg-svg"></div>
+                            <h2>Step 1: Personal Information</h2>
+                            <p>enter your information correctly</p>
+                            <div>
+                                <label for="employee-id">සේවක අංකය:</label>
+                                <input type="text" id="employee-id" name="employee-id" required >
+                            </div>
+                           
+                                                 
+                    </div>
+
+                        <div class="form-two form-step">
+                            <div class="bg-svg"></div>
+                                <h2>Options and Additional Info</h2>
+                                <div>
+                                    <label for="acom1">𝐈 කාර්යක්ෂමතාව සම්පූර්ණ කල දිනය:</label>
+                                    <input type="date" id="acom1" name="acom1" required>
+                                </div>            
+                                <div>
+                                    <label for="acom2">𝐈𝐈 කාර්යක්ෂමතාව සම්පූර්ණ කල දිනය:</label>
+                                    <input type="date" id="acom2" name="acom2" required>
+                                </div>    
+                                <div>
+                                    <label for="acom3">𝐈𝐈𝐈 කාර්යක්ෂමතාව සම්පූර්ණ කල දිනය:</label>
+                                    <input type="date" id="acom3" name="acom3" required>
+                                </div>    
+                                <div>
+                                    <label for="alan">භාෂා ප්‍රවීණතාවය සම්පූර්ණ කල දිනය:</label>
+                                    <input type="date" id="alan" name="alan" required>
+                                </div>    
+                         </div>
+                         <div class="btn-group">
+                            <button type="button" class="btn-prev" disabled>back</button>
+                            <button type="button" class="btn-next" >Next</button>
+                            <button type="submit" class="btn-submit" disabled>submit</button>
+                       </div>
+                    </div>          
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Check for success query parameter and show alert
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success')) {
+            alert('Record created successfully!');
+        }
+   </script>
+    <script src="Js/activity.js"></script>
+    <script src="Js/func.js"></script>
+</body>
+</html>

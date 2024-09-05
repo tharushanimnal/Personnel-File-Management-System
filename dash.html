@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <link rel="stylesheet" href="CSS/dash.css" />
+</head>
+<body>
+    <script>
+         if (localStorage.getItem('loggedIn') !== 'true') {
+      window.location.href = 'login.html';
+  }
+    </script>
+    <div class="dash">
+        <div class="topb">
+            <div class="search">
+                <label >
+                    <input type="text" placeholder="search here">
+                    <i class='bx bx-search-alt-2'></i>
+                </label>
+            </div>
+        </div>
+    <div class="cardbox">
+        <div class="card">
+            <div>
+                    <div class="details">400</div>
+                    <div class="cname">User</div>
+            </div>
+            <div>
+                   <div class="ico">
+                    <i class='bx bxs-user'></i>
+                   </div>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                    <div class="details">400</div>
+                    <div class="cname">User</div>
+            </div>
+            <div>
+                   <div class="ico">
+                    <i class='bx bxs-user'></i>
+                   </div>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                    <div class="details">400</div>
+                    <div class="cname">User</div>
+            </div>
+            <div>
+                   <div class="ico">
+                    <i class='bx bxs-user'></i>
+                   </div>
+            </div>
+        </div>
+       </div> 
+    <div class="row">
+
+    <div class="card1">
+        <div class="graph-container">
+            <div class="bar bar-1" style="height: 80%;"><span>80%</span></div>
+            <div class="bar bar-2" style="height: 60%;"><span>60%</span></div>
+            <div class="bar bar-3" style="height: 90%;"><span>90%</span></div>
+            <div class="bar bar-4" style="height: 40%;"><span>40%</span></div>
+            <div class="bar bar-5" style="height: 70%;"><span>70%</span></div>
+        </div>
+    </div>
+    <div class="card1">
+        <div class="chart-container">
+            <div class="pie-chart">
+                <div class="slice slice-1"></div>
+                <div class="slice slice-2"></div>
+                <div class="slice slice-3"></div>
+                <div class="slice slice-4"></div>
+            </div>
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #4CAF50;"></span>
+                    <span>Category 1</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #2196F3;"></span>
+                    <span>Category 2</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #FF9800;"></span>
+                    <span>Category 3</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #E91E63;"></span>
+                    <span>Category 4</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

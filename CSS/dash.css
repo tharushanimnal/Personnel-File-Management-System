@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+    padding: 20px;
+}
+.main{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    padding: 20px;
+     
+}
+.topb{
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px 10px;
+}
+.search{
+    position: relative;
+    width: 200px;
+    margin: 10px 10px;
+ 
+}
+.search label{
+    position: relative;
+    width: 100%;
+}
+.search label input{
+    
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    border: 1px solid black;
+    outline: none;
+}
+.search label i{
+    position: absolute;
+    top:0;
+    left: 10px;
+    font-size: 1.2rcm;
+}
+.cardbox{
+    position:relative;
+    width:100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.cardbox .card{
+    position: relative;
+    background: white;
+    height: 200px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content:space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgb(0, 0,0,0.08);
+
+}
+.cardbox .card .details{
+    position: relative;
+    font-weight: 500;
+    font-size: 56px;
+    color: #1b1733;
+}
+.cardbox .card .cname{
+    color: black;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.cardbox .card i{
+    font-size: 56px;
+    color: black;
+}
+.cardbox .card:hover{
+    background: grey;
+}
+
+.con{
+    padding: 20px;
+}
+.row{
+    display: flex;
+    
+  }
+.card1 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 50%;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: white;
+    padding: 20px;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+  }
+  .graph-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 80%;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bar {
+    width: 15%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px 5px 0 0;
+}
+
+.bar span {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.bar-1 {
+    background-color: #4CAF50;
+}
+
+.bar-2 {
+    background-color: #2196F3;
+}
+
+.bar-3 {
+    background-color: #FF9800;
+}
+
+.bar-4 {
+    background-color: #E91E63;
+}
+
+.bar-5 {
+    background-color: #9C27B0;
+}
+
+.bar:hover {
+    opacity: 0.8; 
+}
+.chart-container {
+    display: flex;
+   
+}
+
+.pie-chart {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+
+.slice {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip: rect(0, 300px, 300px, 150px);
+    border-radius: 50%;
+}
+
+
+.slice-1 {
+    background-color: #4CAF50;
+    transform: rotate(0deg);
+}
+
+.slice-2 {
+    background-color: #2196F3;
+    transform: rotate(90deg);
+}
+
+.slice-3 {
+    background-color: #FF9800;
+    transform: rotate(180deg);
+}
+
+.slice-4 {
+    background-color: #E91E63;
+    transform: rotate(270deg);
+}
+
+
+.slice-2::before,
+.slice-3::before,
+.slice-4::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 50%;
+    clip: rect(0, 100px, 200px, 0);
+}
+
+
+.legend {
+    display: flex;
+    flex-direction: column;
+}
+
+.legend-item {
+    position: relative;
+    left: 100px;
+    margin-bottom: 8px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: 4px;
+}

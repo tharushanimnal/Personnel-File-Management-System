@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/form.css" />
+</head>
+<body> 
+    <div id="page" class="site">
+        <div class="titl">
+            <img class="imgico" src="img/transfer.png" alt="image" >
+            <p class="txt1">TRANFER DETAILS</p>
+            <a href="index.html" class="right-align">
+                <img class="icon" src="img/back.png" alt="image">
+            </a>
+        </div>
+        <div class="container">
+            <div class="form-box">
+                <div class="progress">
+                   <div class="logo"><a href="#"><span>Enter</span>Details</a></div>
+                   <ul class="progress-steps ">
+                    <li class="step active"> 
+                        <span>1</span>
+                        <p>මූලික තොරතුරු<br><span>25 secs to complete</span></p>
+                    </li>
+                    <li class="step"> 
+                        <span>2</span>
+                        <p> ස්ථාන මාරු තොරතුරු<br><span>60 secs to complete</span></p>
+                    </li>
+                    
+                   </ul>
+                </div>
+                <form action="php/transfer.php" method="post" enctype="multipart/form-data">
+                    <div class="form-one form-step active">
+                        <div class="bg-svg"></div>
+                            <h2>Step 1: Personal Information</h2>
+                            <p>enter your personal information correctly</p>
+                            <div>
+                                <label for="employee-id">සේවක අංකය:</label>
+                                <input type="text" id="employee-id" name="employee-id" >
+                            </div>
+                           
+                                                 
+                    </div>
+
+                        <div class="form-two form-step">
+                            <div class="bg-svg"></div>
+                                <h2>Options and Additional Info</h2>
+                                <div>
+                                    <label for="codat">ක්‍රීඩා අමාත්‍යාංශයට පැමිණි දිනය:</label>
+                                    <input type="date" id="codat" name="codat" required>
+                                </div>            
+                                <div>
+                                    <label for="posts">තනතුර:</label>
+                                    <input type="text" id="posts" name="posts" placeholder="" required>
+                                </div>
+                                <div>
+                                    <label for="earlywp">පෙර සේවා ස්ථානය:</label>
+                                    <input type="text" id="earlywp" name="earlywp" placeholder="" required>
+                                </div>
+                         </div>
+                         <div class="btn-group">
+                            <button type="button" class="btn-prev" disabled>back</button>
+                            <button type="button" class="btn-next" >Next</button>
+                            <button type="submit" class="btn-submit" >submit</button>
+                       </div>
+                    </div>          
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Check for success query parameter and show alert
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success')) {
+            alert('Record created successfully!');
+        }
+   </script>
+    <script src="Js/transfer.js"></script>
+    <script src="Js/func.js"></script>
+</body>
+</html>
